@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function Navbar() {
-  const [isCollapsed, setIsCollapsed] = useState(true);
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
   return (
     <nav className="bg-white border-gray-200 relative">
