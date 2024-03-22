@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import RoutesWithNotFound from "./utilities/RoutesWithNotFound";
 import { BrowserRouter, Route } from "react-router-dom";
 import Navbar from "./component/Navbar";
-import { Home } from "./Pages";
+import { Home } from "./Pages/Public/index.jsx";
 import { PublicRoutes } from "./models/routes.js";
 
 function App() {

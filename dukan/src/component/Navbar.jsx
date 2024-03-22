@@ -1,20 +1,14 @@
 import { useState } from "react";
+import LogoDukan from "../assets/LogoDukan.svg";
 
 function Navbar() {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   return (
-    <nav className="bg-white border-gray-200 relative">
+    <nav className="relative">
       <div className=" flex flex-wrap items-center justify-between mx-auto p-4">
         <a className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8"
-            alt="Flowbite Logo"
-          />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap">
-            DUKAN
-          </span>
+          <img src={LogoDukan} className="h-10" alt="Flowbite Logo" />
         </a>
         <button
           onClick={() => setIsCollapsed(!isCollapsed)}
