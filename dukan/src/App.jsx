@@ -4,6 +4,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Navbar from "./component/Navbar";
 import { Home } from "./Pages/Public/index.jsx";
 import { PublicRoutes } from "./models/routes.js";
+import Footer from "./component/Footer.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <RoutesWithNotFound>
             <Route path={PublicRoutes.HOME} element={<Home />} />
           </RoutesWithNotFound>
+          <Footer />
         </BrowserRouter>
       </Suspense>
     </>

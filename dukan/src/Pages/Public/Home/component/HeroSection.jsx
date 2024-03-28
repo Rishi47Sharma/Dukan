@@ -1,8 +1,15 @@
-import HeroLeftSide from "../../../../assets/HeroLeftSide.png";
-import HeroShopping from "../../../../assets/HeroShopping.svg";
+// import HeroLeftSide from "../../../../assets/HeroLeftSide.png";
+// import HeroShopping from "../../../../assets/HeroShopping.svg";
 import WebShoping from "../../../../assets/web_shopping.svg";
 
 const HeroSection = () => {
+  fetch("https://fakestoreapi.com/products")
+    .then((res) => res.json())
+    .then((json) => console.log(json));
+  fetch("https://fakestoreapi.com/carts/5")
+    .then((res) => res.json())
+    .then((json) => console.log(json));
+
   return (
     <section className="text-gray-600 body-font bg-[#F3F4F6]">
       <div className="container mx-auto flex px-5 md:py-20 md:flex-row flex-col items-center">
